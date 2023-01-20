@@ -83,18 +83,27 @@ var objekt = {};  //object -> skup razlicitih tipova vrijednosti
 // console.log(a)
 // console.log(b)
 
-var osoba = {
-    ime: "Pero",
-    prezime:"Peric",
-    godine:"22",
-    ispisiIme: function (){
-        console.log(this.ime);
-    },
-    ispisOsobina: function(){
-        console.log(this.ime + " "+this.godine + " "+this.prezime);
-    },
-};
+// var osoba = {
+//     ime: "Pero",
+//     prezime:"Peric",
+//     godine:"22",
+//     ispisiIme: function (){
+//         console.log(this.ime);
+//     },
+//     ispisOsobina: function(){
+//         console.log(this.ime + " "+this.godine + " "+this.prezime);
+//     },
+// };
 
-console.log(osoba)
-osoba.ispisiIme();
-osoba.ispisOsobina();
+// console.log(osoba)
+// osoba.ispisiIme();
+// osoba.ispisOsobina();
+
+var pravokutnik = document.getElementsByClassName('pravokutnik');
+console.log(pravokutnik);
+
+for (var i = 0; i < pravokutnik.length; i++) {
+    console.log(pravokutnik[i].innerHTML);
+    pravokutnik[i].style.backgroundColor = prompt();    
+}
+
